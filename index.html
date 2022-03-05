@@ -9,8 +9,8 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <form data-multi-step>
-      <div class="card active" data-step="1">
+    <form data-multi-step class="multi-step-form">
+      <div class="card" data-step>
         <h3 class="card-title">Step 1</h3>
         <div class="form-group">
           <label for="email">Email</label>
@@ -20,9 +20,9 @@
           <label for="password">Password</label>
           <input type="password" name="password" id="password" />
         </div>
-        <button type="button">Next</button>
+        <button type="button" data-next>Next</button>
       </div>
-      <div class="card" data-step="2">
+      <div class="card" data-step>
         <h3 class="card-title">Step 2</h3>
         <div class="form-group">
           <label for="address">Address</label>
@@ -36,10 +36,10 @@
           <label for="zipcode">Zip Code</label>
           <input type="text" name="zipcode" id="zipcode" />
         </div>
-        <button type="button">Previous</button>
-        <button type="button">Next</button>
+        <button type="button" data-previous>Previous</button>
+        <button type="button" data-next>Next</button>
       </div>
-      <div class="card" data-step="3">
+      <div class="card" data-step>
         <h3 class="card-title">Step 3</h3>
         <div class="form-group">
           <label for="firstName">First Name</label>
@@ -57,7 +57,7 @@
           <label for="zipcode">Zip Code</label>
           <input type="text" name="zipcode" id="zipcode" />
         </div>
-        <button type="button">Previous</button>
+        <button type="button" data-previous>Previous</button>
         <button type="button">Submit</button>
       </div>
     </form>
